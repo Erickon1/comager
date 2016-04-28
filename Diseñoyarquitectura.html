@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sdg</title>
+  <meta charset="utf-8">
+ <meta charset="utf-8">
+   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+</head>
+<body>
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="file:///media/erick/KINGSTON/pagina%20web/gerardo/img/im2.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="file:///media/erick/KINGSTON/pagina%20web/gerardo/img/fondo.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="file:///media/erick/KINGSTON/pagina%20web/gerardo/img/im1.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+   <script type="text/javascript">
+   $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+// Pause slider
+$('.slider').slider('pause');
+// Start slider
+$('.slider').slider('start');
+// Next slide
+$('.slider').slider('next');
+// Previous slide
+$('.slider').slider('prev');
+
+  $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+
+    // Next slide
+$('.carousel').carousel('next');
+$('.carousel').carousel('next', [3]); // Move next n times.
+// Previous slide
+$('.carousel').carousel('prev');
+$('.carousel').carousel('prev', [4]); // Move prev n times.
+
+</script>
+ 
+</body>
+</html>
